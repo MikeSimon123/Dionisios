@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dionisio</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Dionisio's</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="special-button">
+                <button><a href="historia.html">Dionísio</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="special-button">
+                <button><a href="historia.html">Dionísio</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="container_search">
+            <div class="main-title">
+                <h1>Descubra mais sobre Dionísio</h1>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <input id="search" type="text"  class="input-field" placeholder="Pesquisar">
+            </div>
+
+            <ul class="items">
+                <li class="item">
+                    <div class="item-content">
+                        <a href="historia.html"><h2 class="item-title">História de Dionísio</h2></a>
+                        <p class="item-subtitle">
+                            <i class="fa-solid fa-book"></i>
+                            História
+                        </p>
+                        <p class="item-descripition">
+                            Descubra mais acerca da História de Dionísio
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-content">
+                        <a href="historia.html"><h2 class="item-title">As bacantes</h2></a>
+                        <p class="item-subtitle">
+                            <i class="fa-solid fa-book"></i>
+                            História
+                        </p>
+                        <p class="item-descripition">
+                            Uma tragédia criada por Eurípides sobre Dionísio. Descubra mais.
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-content">
+                        <a href="produtos.html"><h2 class="item-title">Produtos</h2></a>
+                        <p class="item-subtitle">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Produtos
+                        </p>
+                        <p class="item-descripition">
+                            Venha conhecer os exclusivos produtos vendidos pelo deus do vinho.
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-content">
+                        <a href="produtos.html"><h2 class="item-title">Serviços</h2></a>
+                        <p class="item-subtitle">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Produtos
+                        </p>
+                        <p class="item-descripition">
+                            Venha conhecer os serviços prestados por Dionísio.
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-content">
+                        <a href="galeria.html"><h2 class="item-title">Galeria</h2></a>
+                        <p class="item-subtitle">
+                            <i class="fa-solid fa-image"></i>
+                            Galeria
+                        </p>
+                        <p class="item-descripition">
+                            Contemple a galeria de fotos de Dionísio
+                        </p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-content">
+                        <a href="contato.html"><h2 class="item-title">Contate o desenvolvedor</h2></a>
+                        <p class="item-subtitle">
+                            <i class="fa-solid fa-user"></i>
+                            Contato
+                        </p>
+                        <p class="item-descripition">
+                            Contate o desenvolvedor deste site!
+                        </p>
+                    </div>
+                </li>
+                <li id="no_results">
+                    <p>Nenhum resultado encontrado</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-title">
+            <h1>O que você procura?</h1>
+        </div>            
+
+        <div id="cards_container">
+            <div class="card1">
+                <div class="icon">
+                    <img src="assets/img/dionisio_card.png" alt="Dionísio, o deus do vinho">
+                </div>
+
+                <div class="content1">
+                    <h3>História de Dionísio</h3>
+                    <p>
+                        Dionísio, também conhecido por Baco pelos romanos, é o deus do vinho, da alegria e até do teatro. Nasceu da união de Zeus e da mortal Sêmele, uma traição que veio ao fim com a morte da amante pela vingança de Hera, esposa de Zeus.
+                        <a href="historia.html">Saiba mais</a>.
+                    </p>
+                </div>
+                <button id="read_button" class="read_button">Ver mais</button>
+            </div>
+
+            <div class="card2">
+                <div class="icon">
+                    <img src="assets/img/calice (1).png" alt="Um cálice de vinho tinto com uma folha de videira">
+                </div>
+
+                <div class="content2">
+                    <h3>Produtos</h3>
+                    <p>
+                        Venha conhecer os exclusivos produtos vendidos pelo deus do vinho. São de ótima qualidade e vão te impressionar. Também não se esqueça de ver os serviços que este deus pode prestar a você por apenas um preço razoável.
+                        <a href="produtos.html">Saiba mais</a>.
+                    </p>
+                </div>
+                <button class="read_button" id="read_button2">Ver mais</button>
+            </div>
+
+            <div class="card3">
+                <div class="icon">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+
+                <div class="content3">
+                    <h3>Galeria</h3>
+                    <p>
+                        Admire a beleza de Dionísio em sua galeria, contendo fotos que realçam seu charme. Também seria possível se iludir com tamanha fofura e sedução do deus, apenas observando uma imagem dele.
+                        <a href="galeria.html">Saiba mais</a>.
+                    </p>
+                </div>
+                <button class="read_button" id="read_button3">Ver mais</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Dionisio's</h1>
+                <p>Contate o desenvolvedor</p>
+
+                <div id="footer_social_media">
+                    <a href="https://wa.me/5511934376272" class="footer-link" id="whatsapp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://discord.com" class="footer-link" id="discord" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+
+                    <a href="mailto:mikesimonmikesimon@gmail.com" class="footer-link" id="envelope">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+                    <li>
+                        <a href="historia.html" class="footer-link">História</a>
+                    </li>
+                    <li>
+                        <a href="historia.html" class="footer-link">Bacantes</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html" class="footer-link">Galeria</a>
+                    </li>
+            </ul>
+
+            <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="produtos.html" class="footer-link">Vinhos</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html" class="footer-link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="footer-link">Contato</a>
+                    </li>
+            </ul>
+
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
