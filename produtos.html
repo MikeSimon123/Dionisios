@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dionisio - Produtos</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Dionisio's</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="special-button">
+                <button><a href="historia.html">Dionísio</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="special-button">
+                <button><a href="historia.html">Dionísio</a></button>
+            </div>
+        </div>
+    </header>
+    <main >
+        <div class="main-title">
+            <h1>
+                Confira a seguir produtos exclusivos
+            </h1>
+        </div>
+        
+        <div class="wine-container">
+            <div class="wine-content">
+                <div class="product-img-wine">
+                    <img src="assets/img/vinho_3.png" alt="Uma garrafa de vinho com uma taça de vinho ao lado">
+                </div>
+                <div class="wine-text">
+                    <div class="wine-subtitle">
+                        <h2>Vinho tinto</h2>
+                    </div>
+                    <div class="wine-description">
+                        <p>Um vinho saboroso e místico feito pelo próprio Dionísio</p>
+                    </div>
+                    <div class="wine-price">
+                        <p>R$ 49,90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wine-content">
+                <div class="product-img-wine">
+                    <img src="assets/img/vinho_4.png" alt="Uma garrafa de Champagne">
+                </div>
+                <div class="wine-text">
+                    <div class="wine-subtitle">
+                        <h2>Champagne</h2>
+                    </div>
+                    <div class="wine-description">
+                        <p>Não se pode perder uma oportunidades dessa, não é mesmo?</p>
+                    </div>
+                    <div class="wine-price">
+                        <p>R$ 39,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-title">
+            <h1>Veja a seguir os serviços prestados pelo deus do vinho</h1>
+        </div>
+
+        <div class="services-container">
+            <div class="service-content">
+                <div class="product-img2">
+                    <img src="assets/img/balada_1.png" alt="imagem de uma festa animada com luzes coloridas">
+                </div>
+                <div class="service-text">
+                    <div class="service-subtitle">
+                        <h2>Animador de festas</h2>
+                    </div>
+                    <div class="service-description">
+                        <p>Já pensou em dar uma animada naquela festa sem vida? Deixe isso com o deus do sextou</p>
+                    </div>
+                    <div class="service-price">
+                        <p>R$ 1000,00 por festa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-content">
+                <div class="product-img1">
+                    <img src="assets/img/vinho_1.png" alt="Imagem de uma taça de vinho">
+                </div>
+                <div class="service-text">
+                    <div class="service-subtitle">
+                        <h2>Dicas para vinicultores</h2>
+                    </div>
+                    <div class="service-description">
+                        <p>O que seria melhor para os vinicultores do que dicas de vinicultura especialmente estudadas pelo próprio deus do vinho?</p>
+                    </div>
+                    <div class="service-price">
+                        <p>R$ 200,00 a dica</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Dionisio's</h1>
+                <p>Contate o desenvolvedor</p>
+
+                <div id="footer_social_media">
+                    <a href="https://wa.me/551193897672" class="footer-link" id="whatsapp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://discord.com" class="footer-link" id="discord" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+
+                    <a href="mailto:mike@gmail.com" class="footer-link" id="envelope">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+                    <li>
+                        <a href="historia.html" class="footer-link">História</a>
+                    </li>
+                    <li>
+                        <a href="historia.html" class="footer-link">Bacantes</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html" class="footer-link">Galeria</a>
+                    </li>
+            </ul>
+
+            <ul class="footer-list">
+                    <li>
+                        <h3>Produtos</h3>
+                    </li>
+                    <li>
+                        <a href="produtos.html" class="footer-link">Vinhos</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html" class="footer-link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="footer-link">Contato</a>
+                    </li>
+            </ul>
+
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
